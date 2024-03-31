@@ -1,10 +1,11 @@
 
 import './App.css';
+import LoginForm from './Components/LoginForm/LoginForm';
 
 function App() {
   return (
-    <h1>Login form comming soon</h1>
-  );
+    <LoginForm/>
+  )
 }
 
 export default App;
