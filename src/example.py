@@ -1,4 +1,4 @@
-# count vowel, consonant, number, symbols in a given string
+# # count vowel, consonant, number, symbols in a given string
 
 my_str = input("Enter the string ")
 splited =[]
@@ -25,6 +25,23 @@ print("Number of digits = ",number)
 
 
 # Palindrome
+
+
+num = int(input("enter the number to be checked:- "))
+rev = 0
+copy = num
+
+while(num>0):
+    rem = num % 10
+    rev = rev*10 + rem
+    num = num // 10
+
+if copy==rev:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+
+
 # Armstrong
 # Fibonacci
 # prime
