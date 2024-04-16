@@ -44,21 +44,34 @@
 
 # Armstrong
 
-num = int(input("Enter the number to be checked:- "))
-cub = 0
-copy = num
+# num = int(input("Enter the number to be checked:- "))
+# cub = 0
+# copy = num
 
-while(num>0):
-    rem = num % 10
-    cub = cub + (rem*rem*rem)
-    num = num // 10
+# while(num>0):
+#     rem = num % 10
+#     cub = cub + (rem*rem*rem)
+#     num = num // 10
 
-if copy == cub:
-    print("Armstrong")
+# if copy == cub:
+#     print("Armstrong")
 
-else:
-    print("Not Armstrong")
+# else:
+#     print("Not Armstrong")
+
+
 # Fibonacci
+
+n = int(input("Enter the number :- "))
+
+fibo = [0,1]
+
+for i in range(2,n):
+    next = fibo[i-1]+fibo[i-2]
+    fibo.append(next)
+
+print("fibonacci series up to ",n,"term is:", fibo)
+
 # prime
 # odd even
 # reverse the string
